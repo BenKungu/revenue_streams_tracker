@@ -33,3 +33,13 @@ const Header = (props) => {
     const handlesidebarmobilemenu = () => {
         document.body.classList.toggle('slide-nav');
     }
+
+    if (props.location.pathname.split("/")[1] === 'admin') {
+        require('../../assets/css/feathericon.min.css')
+        require('../../assets/js/feather.min.js')
+        require('../../assets/plugins/fontawesome/css/fontawesome.min.css')
+        require('../../assets/plugins/fontawesome/css/all.min.css')
+        require('../../assets/plugins/fontawesome/js/fontawesome.min.js')
+        require('../../assets/css/font-awesome.min.css')
+        require('../../assets/css/custom.css')
+    }

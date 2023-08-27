@@ -43,3 +43,80 @@ const Header = (props) => {
         require('../../assets/css/font-awesome.min.css')
         require('../../assets/css/custom.css')
     }
+
+    return (
+    <>
+            {/* Header */}
+            <div className="header">
+                {/* Logo */}
+                <div className="header-left">
+                    <Link to="/admin" className="logo">
+                        <img src={logo} alt="Logo" />
+                    </Link>
+                    <Link to="/admin" className="logo logo-small">
+                        <img src={logoSmall} alt="Logo" width="30" height="30" />
+                    </Link>
+                </div>
+                <Link to="#" id="toggle_btn" onClick={handlesidebar}>
+                    <i className="fe fe-text-align-left"></i>
+                </Link>
+                {/* /Logo */}
+                <div className="top-nav-search">
+                    <form>
+                        <input type="text" className="form-control" placeholder="Search here" />
+                        <button className="btn" type="submit">
+                            <i className="fa fa-search" />
+                        </button>
+                    </form>
+                </div>
+
+                {/* Mobile Menu Toggle */}
+                <Link to="#" className="mobile_btn" id="mobile_btn" onClick={() => handlesidebarmobilemenu()}>
+                    <i className="fa fa-bars" />
+                </Link>
+                {/* /Mobile Menu Toggle */}
+                {/* Header Right Menu */}
+                <ul className="nav user-menu">
+                    {/* Notifications */}
+                    <li className="nav-item dropdown noti-dropdown">
+                        <Link
+                            to="#"
+                            className="dropdown-toggle nav-link"
+                            data-bs-toggle="dropdown"
+                        >
+                            <i className="fe fe-bell" />{" "}
+                            <span className="badge rounded-pill">3</span>
+                        </Link>
+                        <div className="dropdown-menu notifications">
+                            <div className="topnav-dropdown-header">
+                                <span className="notification-title">Notifications</span>
+                                <Link to="#" className="clear-noti">
+                                    {" "}
+                                    Clear All{" "}
+                                </Link>
+                            </div>
+                            <div className="noti-content">
+                                <ul className="notification-list">
+                                    <li className="notification-message">
+                                        <Link to="#">
+                                            <div className="media d-flex">
+                                                <span className="avatar avatar-sm flex-shrink-0">
+                                                    <img
+                                                        className="avatar-img rounded-circle"
+                                                        alt="User Image"
+                                                        src={doctor_thumb_01}
+                                                    />
+                                                </span>
+                                                <div className="media-body flex-grow-1">
+                                                    <p className="noti-details">
+                                                        <span className="noti-title">Dr. Ruby Perrin</span>{" "}
+                                                        Schedule{" "}
+                                                        <span className="noti-title">her appointment</span>
+                                                    </p>
+                                                    <p className="noti-time">
+                                                        <span className="notification-time">4 mins ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </li>

@@ -120,3 +120,80 @@ const Header = (props) => {
                                             </div>
                                         </Link>
                                     </li>
+
+                                    <li className="notification-message">
+                                        <Link to="#">
+                                            <div className="media d-flex">
+                                                <span className="avatar avatar-sm flex-shrink-0">
+                                                    <img
+                                                        className="avatar-img rounded-circle"
+                                                        alt="User Image"
+                                                        src={patient1}
+                                                    />
+                                                </span>
+                                                <div className="media-body flex-grow-1">
+                                                    <p className="noti-details">
+                                                        <span className="noti-title">Charlene Reed</span> has
+                                                        booked her appointment to{" "}
+                                                        <span className="noti-title">Dr. Ruby Perrin</span>
+                                                    </p>
+                                                    <p className="noti-time">
+                                                        <span className="notification-time">6 mins ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                    <li className="notification-message">
+                                        <Link to="#">
+                                            <div className="media d-flex">
+                                                <span className="avatar avatar-sm flex-shrink-0">
+                                                    <img
+                                                        className="avatar-img rounded-circle"
+                                                        alt="User Image"
+                                                        src={patient2}
+                                                    />
+                                                </span>
+                                                <div className="media-body flex-grow-1">
+                                                    <p className="noti-details">
+                                                        <span className="noti-title">Travis Trimble</span> sent a
+                                                        amount of $210 for his{" "}
+                                                        <span className="noti-title">appointment</span>
+                                                    </p>
+                                                    <p className="noti-time">
+                                                        <span className="notification-time">8 mins ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                    <li className="notification-message">
+                                        <Link to="#">
+                                            <div className="media d-flex">
+                                                <span className="avatar avatar-sm flex-shrink-0">
+                                                    <img
+                                                        className="avatar-img rounded-circle"
+                                                        alt="User Image"
+                                                        src={patient3}
+                                                    />
+                                                </span>
+                                                <div className="media-body flex-grow-1">
+                                                    <p className="noti-details">
+                                                        <span className="noti-title">Carl Kelly</span> send a
+                                                        message <span className="noti-title"> to his doctor</span>
+                                                    </p>
+                                                    <p className="noti-time">
+                                                        <span className="notification-time">12 mins ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="topnav-dropdown-footer">
+                                <Link to="#">View all Notifications</Link>
+                            </div>
+                        </div>
+                    </li>
+                    {/* /Notifications */}

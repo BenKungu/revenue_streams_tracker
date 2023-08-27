@@ -13,3 +13,23 @@ const Header = (props) => {
     const [task1, settask1] = useState(true);
     const [dropdown, setdropdown] = useState(false);
     const [dropdown1, setdropdown1] = useState(false);
+
+    const handletheme = () => {
+        document.body.classList.toggle('darkmode');
+        settask(!task)
+        settask1(!task1)
+    }
+    const handledropdown = () => {
+        setdropdown(!dropdown)
+        setdropdown1(false)
+    }
+    const handledropdown1 = () => {
+        setdropdown1(!dropdown1)
+        setdropdown(false)
+    }
+    const handlesidebar = () => {
+        document.body.classList.toggle('mini-sidebar');
+    }
+    const handlesidebarmobilemenu = () => {
+        document.body.classList.toggle('slide-nav');
+    }

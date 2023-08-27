@@ -197,3 +197,57 @@ const Header = (props) => {
                         </div>
                     </li>
                     {/* /Notifications */}
+
+                    {/* User Menu */}
+                    <li className="nav-item dropdown has-arrow">
+                        <Link
+                            to="#"
+                            className="dropdown-toggle nav-link"
+                            data-bs-toggle="dropdown"
+                        >
+                            <span className="user-img">
+                                <img
+                                    className="rounded-circle"
+                                    src={avatar01}
+                                    width={31}
+                                    alt="Ryan Taylor"
+                                />
+                            </span>
+                        </Link>
+                        <div className="dropdown-menu">
+                            <div className="user-header">
+                                <div className="avatar avatar-sm">
+                                    <img
+                                        src={avatar01}
+                                        alt="User Image"
+                                        className="avatar-img rounded-circle"
+                                    />
+                                </div>
+                                <div className="user-text">
+                                    <h6>Ryan Taylor</h6>
+                                    <p className="text-muted mb-0">Administrator</p>
+                                </div>
+                            </div>
+                            <Link className="dropdown-item" to="/admin/profile">
+                                My Profile
+                            </Link>
+                            <Link className="dropdown-item" to="/admin/settings">
+                                Settings
+                            </Link>
+                            <Link className="dropdown-item" to="/admin/login">
+                                Logout
+                            </Link>
+                        </div>
+                    </li>
+                    {/* /User Menu */}
+                </ul>
+                {/* /Header Right Menu */}
+            </div>
+
+            {/* /Header */}
+        </>
+    );
+}
+
+
+export default Header;

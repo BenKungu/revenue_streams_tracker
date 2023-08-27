@@ -103,7 +103,7 @@ const Header = (props) => {
                                                 <span className="avatar avatar-sm flex-shrink-0">
                                                     <img
                                                         className="avatar-img rounded-circle"
-                                                        alt="User Image"
+                                                        alt="User"
                                                         src={doctor_thumb_01}
                                                     />
                                                 </span>
@@ -127,7 +127,7 @@ const Header = (props) => {
                                                 <span className="avatar avatar-sm flex-shrink-0">
                                                     <img
                                                         className="avatar-img rounded-circle"
-                                                        alt="User Image"
+                                                        alt="User"
                                                         src={patient1}
                                                     />
                                                 </span>
@@ -150,7 +150,7 @@ const Header = (props) => {
                                                 <span className="avatar avatar-sm flex-shrink-0">
                                                     <img
                                                         className="avatar-img rounded-circle"
-                                                        alt="User Image"
+                                                        alt="some user"
                                                         src={patient2}
                                                     />
                                                 </span>
@@ -173,7 +173,7 @@ const Header = (props) => {
                                                 <span className="avatar avatar-sm flex-shrink-0">
                                                     <img
                                                         className="avatar-img rounded-circle"
-                                                        alt="User Image"
+                                                        alt="User"
                                                         src={patient3}
                                                     />
                                                 </span>
@@ -219,7 +219,7 @@ const Header = (props) => {
                                 <div className="avatar avatar-sm">
                                     <img
                                         src={avatar01}
-                                        alt="User Image"
+                                        alt="User"
                                         className="avatar-img rounded-circle"
                                     />
                                 </div>
